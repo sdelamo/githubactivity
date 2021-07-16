@@ -18,7 +18,7 @@ import java.util.Set;
 @Command(name = "ghactivity", description = "...",
         mixinStandardHelpOptions = true)
 public class GhActivityCommand implements Runnable {
-    @Option(names = {"-t", "--token"}, description = "Github personal Token", required = true)
+    @Option(names = {"-t", "--token"}, description = "Github personal Token", required = true, interactive = true)
     String token;
 
     @Option(names = {"-o", "--org", "--organization"}, description = "Github organization", defaultValue = "micronaut-projects", required = true)
