@@ -1,3 +1,8 @@
 micronaut:
   application:
     name: githubactivity
+  http:
+    client:
+      read-timeout: 45s
+      read-idle-timeout: 45s
+
